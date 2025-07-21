@@ -26,5 +26,9 @@ pub trait Storage: Send + Sync {
         params: &GetItemsParams,
     ) -> Result<FeaturesWithCount, (StatusCode, String)>;
 
-    async fn get_feature(&self, collection_id: &str, id: &str) -> Result<geojson::Feature, (StatusCode, String)>;
+    async fn get_feature(
+        &self,
+        collection_id: &str,
+        id: &str,
+    ) -> Result<geojson::Feature, (StatusCode, String)>;
 }
