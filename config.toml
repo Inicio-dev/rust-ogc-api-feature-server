@@ -1,0 +1,3 @@
+title = "my-ogc-server"
+description = "An OGC API server written in Rust"
+url_base = "http://localhost:3022"
